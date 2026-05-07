@@ -1,0 +1,35 @@
+//自定义css
+a {
+  color: #1890ff;
+}
+
+// SVG图标样式
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+// 图标字体样式
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/c/font_2553510_uvwz8ufn6ij.woff2?t=1689168909736') format('woff2'),
+       url('//at.alicdn.com/t/c/font_2553510_uvwz8ufn6ij.woff?t=1689168909736') format('woff'),
+       url('//at.alicdn.com/t/c/font_2553510_uvwz8ufn6ij.ttf?t=1689168909736') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before { content: "\e698"; }
+.icon-location:before { content: "\e651"; }
+.icon-order:before { content: "\e645"; }
+.icon-user:before { content: "\e607"; }
+.icon-notice:before { content: "\e614"; }
