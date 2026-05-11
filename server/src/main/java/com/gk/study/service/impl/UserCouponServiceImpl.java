@@ -28,7 +28,9 @@ public class UserCouponServiceImpl extends ServiceImpl<UserCouponMapper, UserCou
 
     @Override
     public List<UserCoupon> getUserCoupons(Long userId, Integer status) {
+        
         return baseMapper.getUserCoupons(userId, status);
+
     }
     
     @Override

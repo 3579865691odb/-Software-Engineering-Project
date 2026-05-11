@@ -17,6 +17,7 @@ public class AddressServiceImpl extends ServiceImpl<AddressMapper, Address> impl
 
     @Override
     public List<Address> getAddressList(String userId) {
+
         QueryWrapper<Address> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("user_id", userId);
         queryWrapper.orderBy(true, false, "create_time");

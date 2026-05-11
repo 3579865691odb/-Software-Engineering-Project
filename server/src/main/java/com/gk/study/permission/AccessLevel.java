@@ -9,6 +9,8 @@ public enum AccessLevel {
     ADMIN(3, "admin"), // 管理员
     SUPER(4, "super"); // 超级管理员
 
+
+
     int code;
     String msg;
 

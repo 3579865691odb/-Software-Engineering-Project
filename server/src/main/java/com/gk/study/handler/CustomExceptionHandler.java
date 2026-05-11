@@ -27,7 +27,7 @@ public class CustomExceptionHandler {
     @ExceptionHandler(Exception.class)
     public APIResponse handleException(Exception ex){
         logger.error("error log======>" + ex.getMessage(), ex);
-
+        logger.error("error log======>" + ex.getMessage(), ex);
         saveLog(ex);
         return new APIResponse(ResponeCode.FAIL, ex.getMessage());
     }

@@ -47,6 +47,7 @@ public class AccessInterceptor extends HandlerInterceptorAdapter {
     @Autowired
     public void setUserService( UserService userService) {
         // 为解决先@Component 后@Autowired失效的方案
+
         AccessInterceptor.userService = userService;
     }
 

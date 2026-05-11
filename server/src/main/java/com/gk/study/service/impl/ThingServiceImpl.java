@@ -34,6 +34,7 @@ public class ThingServiceImpl extends ServiceImpl<ThingMapper, Thing> implements
 
         // 排序
         if (StringUtils.isNotBlank(sort)) {
+
             if (sort.equals("recent")) {
                 queryWrapper.orderBy(true, false, "create_time");
             } else if (sort.equals("hot") || sort.equals("recommend")) {
