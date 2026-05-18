@@ -1,0 +1,20 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Vue / Node
+node_modules/
+dist/
+
+# IDEA
+.idea/
+*.iml
+
+# System
+.DS_Store
+Thumbs.db
